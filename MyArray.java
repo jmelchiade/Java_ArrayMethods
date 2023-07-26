@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 //Chapter 8 - Arrays and Array Manipulations
 
 // Exercise 8.4
@@ -30,10 +30,11 @@ public class MyArray {
         numbers = new int[n]; // Creating the array
     }
 
-    public void loadArray() // This method reads n values in the array
+    public void loadArray(Scanner scanner) // This method reads n values in the array
     {
         for (int i = 0; i < size; i++) {
-            numbers[i] = GetData.getInt("Enter an integer value");
+            System.out.print("Enter an integer value: ");
+            numbers[i] = scanner.nextInt();
         }
     }
 
