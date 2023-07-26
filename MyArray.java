@@ -51,9 +51,29 @@ public class MyArray {
     public String reverseOrder() // Retrieve values in reverse order of how they were read
     {
         String s = "";
-        for (i = size - 1; i >= 0; i--)
+        for (int i = size - 1; i >= 0; i--)
             ;
-        s = s + numbers[i] + "\n";
+        s = s + numbers[j] + "\n";
         return s;
     }
 }
+
+// Notes:
+// Line 24 shows the variable, "size", that will store the size of the array to
+// be created.
+// line 25 shows the declaration of the array reference called numbers. Java
+// does not support specifying the array size in the declaration
+// The creation of the array is shown on the right of the assignment operator of
+// line 35. The array has already been declared. Instead of re-declaring, a
+// reference is assigned.
+// The method loadArray() shown on line 32 uses the for loop to access the array
+// serially. For each interaction in the loop, the value that is read is
+// assigned to the respective index of the array.
+// The method inOrder() retrieves the cell values and appends it to the string
+// variable, "s". The loop control variable is used as the index of the array,
+// shown on line 47.
+// Finally, the method reverseOrder() retrieves each array element in the
+// reverse order of how they were originally stored. The loop control variable
+// starts with the last value, a size of -1. That's because if the size of the
+// array is used the upper boundary of the array would have been breached and
+// the code would not compile. See line 54.
