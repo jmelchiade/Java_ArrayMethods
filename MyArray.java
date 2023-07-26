@@ -1,3 +1,4 @@
+
 //Chapter 8 - Arrays and Array Manipulations
 
 // Exercise 8.4
@@ -31,8 +32,9 @@ public class MyArray {
 
     public void loadArray() // This method reads n values in the array
     {
-        for (int i = 0; i < size; i++)
+        for (int i = 0; i < size; i++) {
             numbers[i] = GetData.getInt("Enter an integer value");
+        }
     }
 
     int arraySize() // Return the size of the array
@@ -43,18 +45,20 @@ public class MyArray {
     public String inOrder() // Retrieve the values in order of how they were read
     {
         String s = "";
-        for (int i = 0; i < size; i++)
+        for (int i = 0; i < size; i++) {
             s = s + numbers[i] + "\n";
+        }
         return s;
     }
 
     public String reverseOrder() // Retrieve values in reverse order of how they were read
     {
         String s = "";
-        for (int i = size - 1; i >= 0; i--)
-            ;
-        s = s + numbers[j] + "\n";
+        for (int i = size - 1; i >= 0; i--) {
+            s = s + numbers[i] + "\n";
+        }
         return s;
+
     }
 }
 
